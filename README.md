@@ -12,6 +12,10 @@ Brandon Sicay - 21757
 -   WASD: Movimiento horizontal y vertical de la camara
 -   Q, E: Zoom in y Zoom out correspondientemente
 -   FLECHAS: Movimiento horizontal y vertical de las luces
+-   F: Ver Modelo "Charizard"
+-   G: Ver Modelo "Groudon"
+-   H: Ver Modelo "Pokeball"
+-   J: Ver Modelo "Cave"
 -   Tecla 1: Shader Normal
 -   Tecla 2: Shader con "animación"
 -   Tecla 3: Shader con color
@@ -19,7 +23,3 @@ Brandon Sicay - 21757
 -   Tecla 5: Rainbow Shader
 -   Tecla 6: Mix Shader
 -   Tecla 7: Party Disco Extreme Shader
--   F: Ver Modelo "Charizard"
--   G: Ver Modelo "Groudon"
--   H: Ver Modelo "Pokeball"
--   J: Ver Modelo "Cave"
