@@ -211,7 +211,7 @@ void main()
 
 # !+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-party_extreme_vs = '''
+party_vs = '''
 #version 450 core
 
 layout (location = 0) in vec3 position;

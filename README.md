@@ -2,7 +2,7 @@
 
 Brandon Sicay - 21757
 
-## Correr/Ejecutar programa de Open GL
+## Ejecutar programa
 
 -   py -3.11-32 Main.py
 
@@ -12,14 +12,15 @@ Brandon Sicay - 21757
 -   WASD: Movimiento horizontal y vertical de la camara
 -   Q, E: Zoom in y Zoom out correspondientemente
 -   FLECHAS: Movimiento horizontal y vertical de las luces
+-   MOUSE: Mediante el mouse se pueden ejecutar todos los movimientos antes descritos
 -   F: Ver Modelo "Charizard"
 -   G: Ver Modelo "Groudon"
 -   H: Ver Modelo "Pokeball"
 -   J: Ver Modelo "Cave"
 -   Tecla 1: Shader Normal
--   Tecla 2: Shader con "animación"
+-   Tecla 2: Shader con animación
 -   Tecla 3: Shader con color
 -   Tecla 4: Toon Shader
 -   Tecla 5: Rainbow Shader
 -   Tecla 6: Mix Shader
--   Tecla 7: Party Disco Extreme Shader
+-   Tecla 7: Party Shader

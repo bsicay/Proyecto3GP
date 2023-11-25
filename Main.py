@@ -67,7 +67,7 @@ def all_keyboard_input(keys):
     if keys[K_6]:
         rend.set_shaders(mix_two_textures_vs, mix_two_textures_fs)    
     if keys[K_7]:
-        rend.set_shaders(party_extreme_vs, multicolor_shader)
+        rend.set_shaders(party_vs, multicolor_shader)
 # CHANGE MODEL
     if keys[K_f]: # CAT
         model_actual = model_1
