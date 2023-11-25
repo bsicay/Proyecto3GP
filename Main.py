@@ -9,7 +9,7 @@ from math import cos, sin, radians
 
 width = 960
 height = 540
-    
+
 def createModel(direction : str, texture : str, texture_for_mixture : str, position = [0, 0], scales = [0, 0, 0]):
     model = Model(direction, texture, texture_for_mixture)
     model.position.y -= position[0]
@@ -81,7 +81,6 @@ def all_keyboard_input(keys):
     if keys[K_j]: # 
         model_actual = model_4
         rend.scene[0] = model_actual
-    # !------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
 
@@ -90,7 +89,37 @@ if __name__ == "__main__":
     min_zoom = 1.0  
     max_zoom = 10.0 
     zoom_speed = 0.3  
+
+
+
     pygame.init()
+    pygame.mixer.init()
+
+    screen_menu = pygame.display.set_mode((width, height))
+    pygame.mixer.music.load('resources/music/mainTheme.mp3')
+    pygame.mixer.music.play(-1)  
+
+    background_image = pygame.image.load('resources/textures/main.jpg').convert()
+    background_image = pygame.transform.scale(background_image, (width, height))
+
+    in_menu = True
+    while in_menu:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:  
+                    in_menu = False
+
+        screen_menu.blit(background_image, (0, 0))
+        pygame.display.flip()
+
+    pygame.mixer.music.stop()
+    pygame.quit()
+
+    pygame.init()
+    pygame.mixer.init()
 
     screen = pygame.display.set_mode((width, height), pygame.OPENGL | pygame.DOUBLEBUF)
     clock = pygame.time.Clock()
@@ -109,6 +138,8 @@ if __name__ == "__main__":
     model_actual = model_1
     rend.scene.append(model_actual)
     is_running = True
+    pygame.init()
+    screen = pygame.display.set_mode((width, height), pygame.OPENGL | pygame.DOUBLEBUF)
 
     while is_running:
 
